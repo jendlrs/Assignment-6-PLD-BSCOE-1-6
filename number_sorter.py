@@ -14,8 +14,12 @@ first, second, third, fourth = getNumbers()
 
 #Step 2: If-else statement to arange the numbers from highest to lowest.
 def displayHTL(first_, second_, third_, fourth_):
+    #first-second-third-fourth
     if (first_ > second_ and first_ > third_ and first_ > fourth_) and (second_ > third_ and second_ > fourth_) and (third_> fourth_):
         print(f"{first}, {second_}, {third_}, {fourth_}") 
+    #second-third-fourth-first
+    elif (second_> first_ and second_ > third_ and second_ > fourth) and (third_ > first_ and third_> fourth) and (fourth_ > first):
+        print(f"{second_}, {third_}, {fourth_}, {first_}")
     else:
         print("others")
 
