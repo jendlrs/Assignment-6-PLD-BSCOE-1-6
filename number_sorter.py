@@ -20,6 +20,9 @@ def displayHTL(first_, second_, third_, fourth_):
     #second-third-fourth-first
     elif (second_> first_ and second_ > third_ and second_ > fourth) and (third_ > first_ and third_> fourth) and (fourth_ > first):
         print(f"{second_}, {third_}, {fourth_}, {first_}")
+    #third-fourth-first-second
+    elif (third_ > first_ and third_ >second_ and third_ > fourth_) and (fourth_ > first_ and fourth_ > second_) and (first_ > second_):
+        print(f"{third_}, {fourth_}, {first_}, {second_}") 
     else:
         print("others")
 
