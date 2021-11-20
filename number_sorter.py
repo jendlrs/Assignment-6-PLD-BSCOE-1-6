@@ -78,15 +78,22 @@ def displayHTL(first_, second_, third_, fourth_):
 
     #4- fourth  as the highest number
         #4-1-2-3
-    elif fourth_ >= first_ >= second_ >= third_:
+    elif fourth_ >= first_ >= second_ >= third_ :
         print(f"{fourth_}, {first_}, {second_}, {third_}")
         #4-1-3-2
+    elif fourth_ >= first_ >= third_ >= second_ :
+        print(f"{fourth_}, {first_}, {third_} {second_}")
         #4-2-3-1
+    elif fourth_ >= second_ >= third_ >= first_ :
+        print(f"{fourth_}, {second_}, {third_}, {first_}")
         #4-2-1-3
+    elif fourth_ >= second_ >= first_ >= third_ :
+        print(f"{fourth_}, {second_}, {first_}, {third_}")
         #4-3-1-2
+    elif fourth_ >= third_ >= first_ >= second_ :
+        print(f"{fourth_}, {third_}, {first_}, {second_}")
         #4-3-2-1
-
-    else:
-        print("others")
+    elif fourth_ >= third_ >= second_ >= fourth_ :
+        print(f"{fourth_}, {third_}, {second_}, {fourth_}")
 
 displayHTL(first, second, third, fourth)
