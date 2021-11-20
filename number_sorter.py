@@ -58,13 +58,23 @@ def displayHTL(first_, second_, third_, fourth_):
 
     #3- third as the highest number
         #3-1-2-4
-    elif third_ >= fourth >= first_ >= second_:
-        print(f"{third_}, {fourth_}, {first_}, {second_}") 
+    elif third_ >= first_ >= second_ >= fourth :
+        print(f"{third_}, {first_}, {second_}, {fourth_}") 
         #3-1-4-2
+    elif third_ >= first_>= fourth >= second_ :
+        print(f"{third_}, {first_}, {fourth_}, {second_}") 
         #3-2-1-4
+    elif third_ >= second_ >= first_ >= fourth :
+        print(f"{third_}, {second_}, {first_}, {fourth_}") 
         #3-2-4-1
+    elif third_ >= second_>= fourth_ >= first_ :
+        print(f"{third_}, {second_}, {fourth_}, {first_}") 
         #3-4-1-2
+    elif third_ >= fourth >= first_ >= second_ :
+        print(f"{third_}, {fourth_}, {first_}, {second_}") 
         #3-4-2-1
+    elif third_ >= fourth >= second_ >= first_ :
+        print(f"{third_}, {fourth_}, {second_}, {first_}") 
 
     #4- fourth  as the highest number
         #4-1-2-3
