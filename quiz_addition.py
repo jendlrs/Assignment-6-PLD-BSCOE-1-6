@@ -43,7 +43,12 @@ def given_and_score (nameA):
                 question_number +=1
 
 #Step 4: Display total score
-        print(f"Your total score is {user_score}/10")
+        if user_score == 10:
+            print(f"Congratulations! you got a perfect score of {user_score}/10.\n")
+        elif user_score <10 and user_score >=7:
+            print(f"Very Good! you passed the quiz! Your got a score of {user_score}/10.\n")
+        else:
+            print(f"You got a score of {user_score}/10. It does not meet the passing score. More practice.\n")
 
 name= getName()
 given_and_score (name)
