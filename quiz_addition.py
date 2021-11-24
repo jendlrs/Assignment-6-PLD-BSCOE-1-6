@@ -20,6 +20,29 @@ def given_and_score (nameA):
         print("If you are ready, let's proceed.\nThis quiz is composed of 10 questions. Good luck!")
         print("Instruction: Find the sum of the following.")
 
+        question_number =1 
+        user_score =0
+
+        while question_number <= 10:
+            first_N = random.randrange(0,99)
+            second_N= random.randrange(0,99)
+            answer = first_N + second_N
+            
+            print(f"{question_number}.) {first_N} + {second_N}")
+            user_answer = int(input("The sum is: "))
+
+        #check if the user's answer is correct
+
+            if answer == user_answer:
+                print ("Correct!")
+                user_score +=1
+                question_number +=1
+            else:
+                print (f"Wrong! The answer must be {answer}")
+                user_score +=0
+                question_number +=1
+
+
 #Step 4: Display total score
 
 name= getName()
