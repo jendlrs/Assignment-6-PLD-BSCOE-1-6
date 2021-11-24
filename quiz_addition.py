@@ -8,7 +8,12 @@
 import random #it will be used in step 3
 print("Welcome to Math Quiz! Today's examination is about addition")
 #Step 2: Ask the user's name and if they want to take the quiz
+def getName():
+    name_ = input("What is your name? ")
+    return name_
 #Step #3: If they are ready, proceed in giving two random numbers
 #Step 4: Display total score
+
+name= getName()
 
     
