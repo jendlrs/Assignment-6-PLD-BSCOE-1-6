@@ -6,19 +6,19 @@
 
 #Step 1: Import random
 import random #it will be used in step 3
-print("Welcome to Math Quiz! Today's examination is about addition.")
+print("\nWelcome to Math Quiz! Today's examination is about addition.")
 #Step 2: Ask the user's name and if they want to take the quiz
 def getName():
-    name_ = input("What is your name? ")
+    name_ = input("\nWhat is your name? ")
     return name_
 
 def given_and_score (nameA):
-    ready_or_not = input(f"Hi, {nameA}! Are you ready to take the quiz? Yes or No: ")
+    ready_or_not = input(f"\nHi, {nameA}! Are you ready to take the quiz? Yes or No: ")
     if ready_or_not == "No" or ready_or_not == "no":
-        print("It's okay, come back when you are ready to take the quiz.")
+        print("\nIt's okay, come back when you are ready to take the quiz.")
     else: #Step #3: If they are ready, proceed in giving 2 random numbers
-        print("If you are ready, let's proceed.\nThis quiz is composed of 10 questions. Good luck!")
-        print("Instruction: Find the sum of the following.")
+        print("\nIf you are ready, let's proceed.\nThis quiz is composed of 10 questions.\nGood luck!")
+        print("\nInstruction: Find the sum of the following.")
 
         question_number =1 
         user_score =0
@@ -28,17 +28,17 @@ def given_and_score (nameA):
             second_N= random.randrange(0,99)
             answer = first_N + second_N
             
-            print(f"{question_number}.) {first_N} + {second_N}")
-            user_answer = int(input("The sum is: "))
+            print(f"\n{question_number}.) {first_N} + {second_N}")
+            user_answer = int(input("\nThe sum is: "))
 
         #check if the user's answer is correct
 
             if answer == user_answer:
-                print ("Correct!")
+                print ("\nYour answer is CORRECT!\n")
                 user_score +=1
                 question_number +=1
             else:
-                print (f"Wrong! The answer must be {answer}")
+                print (f"\nYour answer is WRONG! The answer must be {answer}\n")
                 user_score +=0
                 question_number +=1
 
