@@ -38,7 +38,7 @@ def given_and_score (nameA):
                 user_score +=1
                 question_number +=1
             else:
-                print (f"\nYour answer is WRONG! The answer must be {answer}\n")
+                print (f"\nYour answer is \033[91mWRONG!\033[0m The answer must be \033[1m{answer}\033[0m\n")
                 user_score +=0
                 question_number +=1
 
