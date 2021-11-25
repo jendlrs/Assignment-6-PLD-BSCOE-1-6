@@ -34,7 +34,7 @@ def given_and_score (nameA):
         #check if the user's answer is correct
 
             if answer == user_answer:
-                print ("\nYour answer is CORRECT!\n")
+                print ("\nYour answer is \033[92mCORRECT!\033[0m\n")
                 user_score +=1
                 question_number +=1
             else:
