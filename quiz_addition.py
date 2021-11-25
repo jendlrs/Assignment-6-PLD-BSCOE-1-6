@@ -18,7 +18,7 @@ def given_and_score (nameA):
         print("\nIt's okay, come back when you are ready to take the quiz.\n")
     else: #Step #3: If they are ready, proceed in giving 2 random numbers
         print("\nIf you are ready, let's proceed.\nThis quiz is composed of 10 questions.\nGood luck!")
-        print("\nInstruction: Find the sum of the following.\n")
+        print("\n\033[1mInstruction:\033[0m Find the sum of the following.\n")
 
         question_number =1 
         user_score =0
