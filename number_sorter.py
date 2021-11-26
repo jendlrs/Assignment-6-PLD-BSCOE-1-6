@@ -14,7 +14,7 @@ def getNumbers ():
 first, second, third, fourth = getNumbers()
 
 #Step 2: If-else statement to arange the numbers from highest to lowest.
-print ("\nDescending oder:\n")
+print ("\n\033[1mDescending order:\n\033[0m")
 def displayHTL(first_, second_, third_, fourth_):
 
 #24 possible outcomes
@@ -35,13 +35,13 @@ def displayHTL(first_, second_, third_, fourth_):
     elif first_ >= fourth_ >= second_ >= third_ :
         print(f"{first_}, {fourth_}, {second_}, {third_}\n")
         #1-4-3-2
-    elif first_ >= fourth_ >= third_ >= fourth_ :
-        print(f"{first_}, {fourth_}, {third_}, {fourth_}\n")
+    elif first_ >= fourth_ >= third_ >= second_ :
+        print(f"{first_}, {fourth_}, {third_}, {second_}\n")
 
     #2- second as the highest number
         #2-1-4-3
     elif second_>= first_ >= fourth_ >= third_ :
-        print(f"{second_}, {third_}, {fourth_}, {first_}\n")
+        print(f"{second_}, {first_}, {fourth_}, {third_}\n")
         #2-1-3-4
     elif second_ >= first_ >= third_ >= fourth_ :
         print(f"{second_}, {first_}, {third_}, {fourth_}\n")
@@ -95,7 +95,7 @@ def displayHTL(first_, second_, third_, fourth_):
     elif fourth_ >= third_ >= first_ >= second_ :
         print(f"{fourth_}, {third_}, {first_}, {second_}\n")
         #4-3-2-1
-    elif fourth_ >= third_ >= second_ >= fourth_ :
-        print(f"{fourth_}, {third_}, {second_}, {fourth_}\n")
+    else:
+        print(f"{fourth_}, {third_}, {second_}, {first_}\n")
 
 displayHTL(first, second, third, fourth)
